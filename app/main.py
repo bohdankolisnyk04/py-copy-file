@@ -20,4 +20,4 @@ def copy_file(command: str) -> None:
             for line in file_in:
                 file_out.write(line)
     except FileNotFoundError:
-        return
+        print(f"Error: The file '{filename}' does not exist.")
